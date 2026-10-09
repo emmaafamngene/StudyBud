@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  background: #f7f8fc;
+  color: #202338;
+  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 12% 0%, rgb(224 231 255 / 38%), transparent 34rem),
+    #f7f8fc;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #c7d2fe;
+  color: #1e1b4b;
+}
+
+:focus-visible {
+  outline: 3px solid rgb(99 102 241 / 55%);
+  outline-offset: 3px;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  background: #0b1020;
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(ellipse at 12% 0%, rgb(49 46 129 / 18%), transparent 34rem),
+    #0b1020;
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .bg-white,
+html[data-theme="dark"] .bg-white\/90,
+html[data-theme="dark"] .bg-white\/95 {
+  background-color: #111a2d !important;
+}
+
+html[data-theme="dark"] .bg-slate-50,
+html[data-theme="dark"] .bg-slate-50\/60,
+html[data-theme="dark"] .bg-\[\#f4f6fc\],
+html[data-theme="dark"] .bg-\[\#f9faff\] {
+  background-color: #0e1729 !important;
+}
+
+html[data-theme="dark"] [class~="text-slate-950"],
+html[data-theme="dark"] [class~="text-slate-900"],
+html[data-theme="dark"] [class~="text-slate-800"],
+html[data-theme="dark"] [class~="text-slate-700"] {
+  color: #e2e8f0 !important;
+}
+
+html[data-theme="dark"] [class~="text-slate-600"],
+html[data-theme="dark"] [class~="text-slate-500"] {
+  color: #a9b6cc !important;
+}
+
+html[data-theme="dark"] [class~="border-slate-100"],
+html[data-theme="dark"] [class~="border-slate-200"],
+html[data-theme="dark"] [class~="border-slate-300"] {
+  border-color: #27344b !important;
+}
+
+html[data-theme="dark"] .bg-indigo-50,
+html[data-theme="dark"] .bg-violet-50,
+html[data-theme="dark"] .bg-emerald-50,
+html[data-theme="dark"] .bg-amber-50 {
+  filter: brightness(0.78);
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea {
+  color: #e2e8f0;
+  background-color: #111a2d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
